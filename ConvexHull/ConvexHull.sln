@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConvexHull", "ConvexHull\ConvexHull.vcxproj", "{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}.Debug|x64.ActiveCfg = Debug|x64
+		{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}.Debug|x64.Build.0 = Debug|x64
+		{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}.Debug|x86.ActiveCfg = Debug|Win32
+		{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}.Debug|x86.Build.0 = Debug|Win32
+		{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}.Release|x64.ActiveCfg = Release|x64
+		{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}.Release|x64.Build.0 = Release|x64
+		{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}.Release|x86.ActiveCfg = Release|Win32
+		{9E10EBEA-ADDF-48EB-8382-91469EA2BED5}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E539EB90-035A-4389-AE4B-3842878E0981}
+	EndGlobalSection
+EndGlobal
