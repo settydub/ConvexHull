@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClCompile Include="brute.cpp" />
     <ClCompile Include="ch.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="quick.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -23,10 +23,13 @@
     <ClCompile Include="ch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="quick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="brute.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="quick.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
