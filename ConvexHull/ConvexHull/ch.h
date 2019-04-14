@@ -3,6 +3,7 @@
 #define CH_H
 #include <iostream>
 #include <vector>
+#include <random>
 using namespace std;
 
 //generates random points in a 2D plane
@@ -12,14 +13,20 @@ class Convex
 	struct point {
 		int x, y;
 	};
+	//holds the values for solution lines
+	struct line {
+		int x1, x2, y1, y2;
+	};
 	//holds the max and min x and y values for all points
 	int maxX, maxY, minX, minY;
-	//the number of points in the plain
+	//the number of points in the plane
 	int numPoints;
 	//holds all the points on the plane
 	vector<point> points;
 	//maximum value for a point
 	int pointMax;
+	//holds all the points for the solution lines
+	vector<line> hullLines;
 public:
 	//constructor
 	Convex(int np, int mxX, int mxY, int mnX, int mnY);
@@ -27,6 +34,12 @@ public:
 	void generatePoints();
 	//print points
 	void printPoints();
+	//print solution lines
+	void printLines();
+	//calculates convex hull using brute force
+	void bruteForce();
+	//remove duplicate lines in solution set
+	void cleanSolution();
 };
 
 #endif
