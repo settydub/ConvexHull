@@ -39,26 +39,17 @@ void Convex::generatePoints()
 void Convex::printPoints() {
 	cout << "Points" << endl;
 	for (int i = 0; i < points.size(); i++) {
-		cout << "(" << points[i].x << ", " << points[i].y  << ")" << endl;
+		cout << "(" << points[i].x << ", " << points[i].y  << ") " << endl;
 	}
+	cout << endl;
 }
 
 //print out all the line points that make the solution for the hull
 void Convex::printLines() {
 	cout << "Solution Lines" << endl;
-	for (int i = 0; i < hullLines.size(); i++) {
-		cout << "(" << hullLines[i].x1 << ", " << hullLines[i].y1 << ") to (" << hullLines[i].x2 << ", " << hullLines[i].y2 << ")" << endl;
+	for (int i = 0; i < solPoints.size() - 1; i+=2) {
+		cout << "(" << solPoints[i].x << ", " << solPoints[i].y << ") to (" << solPoints[i + 1].x << ", " << solPoints[i + 1].y << ") " << endl;
 	}
-}
-
-//removes duplicate lines from solution set
-void Convex::cleanSolution() {
-	for (int i = 0; i < hullLines.size(); i++) {
-		for (int j = 0; j < hullLines.size(); j++) {
-			if (hullLines[i].x1 == hullLines[j].x2 && hullLines[i].x2 == hullLines[j].x1 && hullLines[i].y1 == hullLines[j].y2 && hullLines[i].y2 == hullLines[j].y1
-				|| (hullLines[i].x1 == hullLines[j].x1 && hullLines[i].x2 == hullLines[j].x2 && hullLines[i].y1 == hullLines[j].y1 && hullLines[i].y2 == hullLines[j].y2)) {
-				hullLines.erase(hullLines.begin() + j);
-			}
-		}
-	}
+	solPoints.clear();
+	cout << endl;
 }
